@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>expirationTime计算 | xikun&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="成功的路上一点也不拥挤">
+    
+    <link rel="preload" href="/assets/css/0.styles.7cbaeff5.css" as="style"><link rel="preload" href="/assets/js/app.620192f4.js" as="script"><link rel="preload" href="/assets/js/2.ea8b5cd0.js" as="script"><link rel="preload" href="/assets/js/116.cedd5e38.js" as="script"><link rel="prefetch" href="/assets/js/10.c31ea8d8.js"><link rel="prefetch" href="/assets/js/100.8ce541af.js"><link rel="prefetch" href="/assets/js/101.e8afd788.js"><link rel="prefetch" href="/assets/js/102.47213295.js"><link rel="prefetch" href="/assets/js/103.9480ed2d.js"><link rel="prefetch" href="/assets/js/104.3e97bf6e.js"><link rel="prefetch" href="/assets/js/105.6bea410d.js"><link rel="prefetch" href="/assets/js/106.fcb8612b.js"><link rel="prefetch" href="/assets/js/107.aadba9d3.js"><link rel="prefetch" href="/assets/js/108.a06604cd.js"><link rel="prefetch" href="/assets/js/109.1cfd1a28.js"><link rel="prefetch" href="/assets/js/11.3665e921.js"><link rel="prefetch" href="/assets/js/110.bf4b3814.js"><link rel="prefetch" href="/assets/js/111.7b65b5ef.js"><link rel="prefetch" href="/assets/js/112.0a8a7bbb.js"><link rel="prefetch" href="/assets/js/113.76ab4230.js"><link rel="prefetch" href="/assets/js/114.cf9abdf5.js"><link rel="prefetch" href="/assets/js/115.3dc6bba6.js"><link rel="prefetch" href="/assets/js/117.9be4a81e.js"><link rel="prefetch" href="/assets/js/118.78c5c713.js"><link rel="prefetch" href="/assets/js/119.3d4ecf88.js"><link rel="prefetch" href="/assets/js/12.2734fc8e.js"><link rel="prefetch" href="/assets/js/120.f7025eff.js"><link rel="prefetch" href="/assets/js/121.c47a931b.js"><link rel="prefetch" href="/assets/js/122.619a8684.js"><link rel="prefetch" href="/assets/js/123.53b29202.js"><link rel="prefetch" href="/assets/js/124.0e57ff99.js"><link rel="prefetch" href="/assets/js/125.a40c4ee4.js"><link rel="prefetch" href="/assets/js/126.6632e347.js"><link rel="prefetch" href="/assets/js/127.e12303a5.js"><link rel="prefetch" href="/assets/js/128.b6663c87.js"><link rel="prefetch" href="/assets/js/129.476f5ec6.js"><link rel="prefetch" href="/assets/js/13.ec50e476.js"><link rel="prefetch" href="/assets/js/130.4ae3f875.js"><link rel="prefetch" href="/assets/js/131.cfad27ad.js"><link rel="prefetch" href="/assets/js/132.bcbb9dbe.js"><link rel="prefetch" href="/assets/js/133.a9a4f777.js"><link rel="prefetch" href="/assets/js/134.19924409.js"><link rel="prefetch" href="/assets/js/135.d3a9de07.js"><link rel="prefetch" href="/assets/js/136.03e87f0a.js"><link rel="prefetch" href="/assets/js/14.2cef92f4.js"><link rel="prefetch" href="/assets/js/15.568a38c9.js"><link rel="prefetch" href="/assets/js/16.b20562a4.js"><link rel="prefetch" href="/assets/js/17.eaf0edc0.js"><link rel="prefetch" href="/assets/js/18.71e1e2cf.js"><link rel="prefetch" href="/assets/js/19.09d2e91b.js"><link rel="prefetch" href="/assets/js/20.97fb148c.js"><link rel="prefetch" href="/assets/js/21.3904e2e0.js"><link rel="prefetch" href="/assets/js/22.c35f001d.js"><link rel="prefetch" href="/assets/js/23.43736dfe.js"><link rel="prefetch" href="/assets/js/24.7b49ef43.js"><link rel="prefetch" href="/assets/js/25.25ebb14a.js"><link rel="prefetch" href="/assets/js/26.f9403560.js"><link rel="prefetch" href="/assets/js/27.cba2d114.js"><link rel="prefetch" href="/assets/js/28.b5f9da9c.js"><link rel="prefetch" href="/assets/js/29.3b7334c0.js"><link rel="prefetch" href="/assets/js/3.89a4bb9c.js"><link rel="prefetch" href="/assets/js/30.b6eded62.js"><link rel="prefetch" href="/assets/js/31.e23fcf1b.js"><link rel="prefetch" href="/assets/js/32.8f6ac1e0.js"><link rel="prefetch" href="/assets/js/33.61b1ac29.js"><link rel="prefetch" href="/assets/js/34.963bd529.js"><link rel="prefetch" href="/assets/js/35.848dff3b.js"><link rel="prefetch" href="/assets/js/36.3153fb2a.js"><link rel="prefetch" href="/assets/js/37.7c2bbaa8.js"><link rel="prefetch" href="/assets/js/38.22e223d1.js"><link rel="prefetch" href="/assets/js/39.7ef433e5.js"><link rel="prefetch" href="/assets/js/4.e4fefc08.js"><link rel="prefetch" href="/assets/js/40.01f13428.js"><link rel="prefetch" href="/assets/js/41.51d9c24a.js"><link rel="prefetch" href="/assets/js/42.aa8d9dc5.js"><link rel="prefetch" href="/assets/js/43.5b1bbfa8.js"><link rel="prefetch" href="/assets/js/44.a7e027a3.js"><link rel="prefetch" href="/assets/js/45.4b6b407e.js"><link rel="prefetch" href="/assets/js/46.aa23bdc0.js"><link rel="prefetch" href="/assets/js/47.ad15c348.js"><link rel="prefetch" href="/assets/js/48.5c3346d9.js"><link rel="prefetch" href="/assets/js/49.868f8cc1.js"><link rel="prefetch" href="/assets/js/5.15ee20ac.js"><link rel="prefetch" href="/assets/js/50.af0a1194.js"><link rel="prefetch" href="/assets/js/51.34e860c4.js"><link rel="prefetch" href="/assets/js/52.1414a9fa.js"><link rel="prefetch" href="/assets/js/53.ce6ae3c1.js"><link rel="prefetch" href="/assets/js/54.bcbabc9b.js"><link rel="prefetch" href="/assets/js/55.13c12ca9.js"><link rel="prefetch" href="/assets/js/56.e3b66859.js"><link rel="prefetch" href="/assets/js/57.f1d07b88.js"><link rel="prefetch" href="/assets/js/58.e5efbc70.js"><link rel="prefetch" href="/assets/js/59.75d6c9f3.js"><link rel="prefetch" href="/assets/js/6.f18fe988.js"><link rel="prefetch" href="/assets/js/60.cd65af94.js"><link rel="prefetch" href="/assets/js/61.42a95779.js"><link rel="prefetch" href="/assets/js/62.05ce503f.js"><link rel="prefetch" href="/assets/js/63.fa5359f2.js"><link rel="prefetch" href="/assets/js/64.a136cc71.js"><link rel="prefetch" href="/assets/js/65.2dd5a35f.js"><link rel="prefetch" href="/assets/js/66.835f7953.js"><link rel="prefetch" href="/assets/js/67.95c7ce66.js"><link rel="prefetch" href="/assets/js/68.7f3a7551.js"><link rel="prefetch" href="/assets/js/69.6a987c0f.js"><link rel="prefetch" href="/assets/js/7.21d1e264.js"><link rel="prefetch" href="/assets/js/70.cba306e3.js"><link rel="prefetch" href="/assets/js/71.5901b9c1.js"><link rel="prefetch" href="/assets/js/72.b32bc635.js"><link rel="prefetch" href="/assets/js/73.7da4e57b.js"><link rel="prefetch" href="/assets/js/74.33b47a6e.js"><link rel="prefetch" href="/assets/js/75.2e1bd753.js"><link rel="prefetch" href="/assets/js/76.e10531bb.js"><link rel="prefetch" href="/assets/js/77.0fc91e78.js"><link rel="prefetch" href="/assets/js/78.2d387af8.js"><link rel="prefetch" href="/assets/js/79.9b2438e9.js"><link rel="prefetch" href="/assets/js/8.0f6a4995.js"><link rel="prefetch" href="/assets/js/80.e78c3710.js"><link rel="prefetch" href="/assets/js/81.03603119.js"><link rel="prefetch" href="/assets/js/82.5272a1a2.js"><link rel="prefetch" href="/assets/js/83.b1bc6154.js"><link rel="prefetch" href="/assets/js/84.9de9e3d0.js"><link rel="prefetch" href="/assets/js/85.d364dca4.js"><link rel="prefetch" href="/assets/js/86.134982cd.js"><link rel="prefetch" href="/assets/js/87.65bb4764.js"><link rel="prefetch" href="/assets/js/88.9dfd1f9d.js"><link rel="prefetch" href="/assets/js/89.cd79574b.js"><link rel="prefetch" href="/assets/js/9.e8d3e324.js"><link rel="prefetch" href="/assets/js/90.32f468f8.js"><link rel="prefetch" href="/assets/js/91.b1155128.js"><link rel="prefetch" href="/assets/js/92.0d24fcfb.js"><link rel="prefetch" href="/assets/js/93.a4242f75.js"><link rel="prefetch" href="/assets/js/94.152fe6f4.js"><link rel="prefetch" href="/assets/js/95.25595df3.js"><link rel="prefetch" href="/assets/js/96.3def133d.js"><link rel="prefetch" href="/assets/js/97.b78d3cdd.js"><link rel="prefetch" href="/assets/js/98.d95d0b35.js"><link rel="prefetch" href="/assets/js/99.281e9c8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7cbaeff5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">xikun's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/arithmetic/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">
+  React源码解析
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/arithmetic/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">
+  React源码解析
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>创建更新</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/react/Render.html" class="sidebar-link">ReactDOM.render</a></li><li><a href="/react/update.html" class="sidebar-link">updateQueue</a></li><li><a href="/react/Fiber.html" class="sidebar-link">Fiber 数据结构</a></li><li><a href="/react/expirationTime.html" aria-current="page" class="active sidebar-link">expirationTime计算</a></li><li><a href="/react/updateQueue.html" class="sidebar-link">模拟 UpdateQueue</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>任务调度</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Hooks</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="expirationtime计算"><a href="#expirationtime计算" class="header-anchor">#</a> expirationTime计算</h1> <p>expirationTime 时间的计算和 React 没有任何关联,首先让我们抛开 React 相关东西,单纯的来看 这个计算,在 <strong>/react-reconciler/src/ReactFiberExpirationTime.js</strong> 中我们可以看到相关的expirationTime计算 公式,代码如下</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// MAX_SIGNED_31_BIT_INT 默认定义为 Math.pow(2, 30) - 1  1073741823</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> Sync <span class="token operator">=</span> <span class="token constant">MAX_SIGNED_31_BIT_INT</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> Batched <span class="token operator">=</span> Sync <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">const</span> <span class="token constant">UNIT_SIZE</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token constant">MAGIC_NUMBER_OFFSET</span> <span class="token operator">=</span> Batched <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">// 1073741821</span>
+
+
+<span class="token comment">// 1 unit of expiration time represents 10ms.</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">msToExpirationTime</span><span class="token punctuation">(</span><span class="token parameter">ms<span class="token operator">:</span> number</span><span class="token punctuation">)</span><span class="token operator">:</span> ExpirationTime <span class="token punctuation">{</span>
+  <span class="token comment">// Always add an offset so that we don't clash with the magic number for NoWork.</span>
+  <span class="token keyword">return</span> <span class="token constant">MAGIC_NUMBER_OFFSET</span> <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>ms <span class="token operator">/</span> <span class="token constant">UNIT_SIZE</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">expirationTimeToMs</span><span class="token punctuation">(</span><span class="token parameter">expirationTime<span class="token operator">:</span> ExpirationTime</span><span class="token punctuation">)</span><span class="token operator">:</span> number <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token constant">MAGIC_NUMBER_OFFSET</span> <span class="token operator">-</span> expirationTime<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token constant">UNIT_SIZE</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">function</span> <span class="token function">ceiling</span><span class="token punctuation">(</span><span class="token parameter">num<span class="token operator">:</span> number<span class="token punctuation">,</span> precision<span class="token operator">:</span> number</span><span class="token punctuation">)</span><span class="token operator">:</span> number <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>num <span class="token operator">/</span> precision<span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> precision<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">function</span> <span class="token function">computeExpirationBucket</span><span class="token punctuation">(</span>
+  <span class="token parameter">currentTime<span class="token punctuation">,</span>
+  expirationInMs<span class="token punctuation">,</span>
+  bucketSizeMs<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> ExpirationTime <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token constant">MAGIC_NUMBER_OFFSET</span> <span class="token operator">-</span>
+    <span class="token function">ceiling</span><span class="token punctuation">(</span>
+      <span class="token constant">MAGIC_NUMBER_OFFSET</span> <span class="token operator">-</span> currentTime <span class="token operator">+</span> expirationInMs <span class="token operator">/</span> <span class="token constant">UNIT_SIZE</span><span class="token punctuation">,</span>
+      bucketSizeMs <span class="token operator">/</span> <span class="token constant">UNIT_SIZE</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">LOW_PRIORITY_EXPIRATION</span> <span class="token operator">=</span> <span class="token number">5000</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">LOW_PRIORITY_BATCH_SIZE</span> <span class="token operator">=</span> <span class="token number">250</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">computeAsyncExpiration</span><span class="token punctuation">(</span>
+  <span class="token parameter">currentTime<span class="token operator">:</span> ExpirationTime<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> ExpirationTime <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">computeExpirationBucket</span><span class="token punctuation">(</span>
+    currentTime<span class="token punctuation">,</span>
+    <span class="token constant">LOW_PRIORITY_EXPIRATION</span><span class="token punctuation">,</span>
+    <span class="token constant">LOW_PRIORITY_BATCH_SIZE</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">computeSuspenseExpiration</span><span class="token punctuation">(</span>
+  <span class="token parameter">currentTime<span class="token operator">:</span> ExpirationTime<span class="token punctuation">,</span>
+  timeoutMs<span class="token operator">:</span> number<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> ExpirationTime <span class="token punctuation">{</span>
+  <span class="token comment">// TODO: Should we warn if timeoutMs is lower than the normal pri expiration time?</span>
+  <span class="token keyword">return</span> <span class="token function">computeExpirationBucket</span><span class="token punctuation">(</span>
+    currentTime<span class="token punctuation">,</span>
+    timeoutMs<span class="token punctuation">,</span>
+    <span class="token constant">LOW_PRIORITY_BATCH_SIZE</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">HIGH_PRIORITY_EXPIRATION</span> <span class="token operator">=</span> __DEV__ <span class="token operator">?</span> <span class="token number">500</span> <span class="token operator">:</span> <span class="token number">150</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">HIGH_PRIORITY_BATCH_SIZE</span> <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">computeInteractiveExpiration</span><span class="token punctuation">(</span><span class="token parameter">currentTime<span class="token operator">:</span> ExpirationTime</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">computeExpirationBucket</span><span class="token punctuation">(</span>
+    currentTime<span class="token punctuation">,</span>
+    <span class="token constant">HIGH_PRIORITY_EXPIRATION</span><span class="token punctuation">,</span>
+    <span class="token constant">HIGH_PRIORITY_BATCH_SIZE</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>React 有两种类型的 <strong>ExpirationTime</strong>, 一个是 Interactive,另一种是普通的异步。Interactive的比如说是由事件触发的，那么他的响应优先级会比较高因为涉及到交互</p> <p>拿 <strong>computeAsyncExpiration</strong> 和 <strong>computeInteractiveExpiration</strong> 方法来说,他们分别调用 <strong>computeExpirationBucket</strong> 传入以下:</p> <ul><li>currentTime  调用 msToExpirationTime 得到的 ExpirationTime</li> <li>expirationInMs 不同优先级任务会传不同的偏移量，把不同优先级的时间拉开差距</li> <li>bucketSizeMs 越大，批处理的间隔就越大</li></ul> <p>我们现在套用公式来试试,</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// computeAsyncExpiration 公式</span>
+<span class="token function">computeExpirationBucket</span><span class="token punctuation">(</span>currentTime<span class="token punctuation">,</span><span class="token number">5000</span><span class="token punctuation">,</span><span class="token number">250</span><span class="token punctuation">)</span>
+<span class="token comment">// computeExpirationBucket 方法</span>
+<span class="token punctuation">(</span><span class="token number">1073741821</span><span class="token operator">-</span><span class="token function">ceiling</span><span class="token punctuation">(</span><span class="token number">1073741821</span><span class="token operator">-</span>currentTime<span class="token operator">+</span><span class="token number">5000</span><span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">250</span><span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// 代入 ceiling</span>
+<span class="token number">1073741821</span><span class="token operator">-</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1073741821</span> <span class="token operator">-</span> currentTime <span class="token operator">+</span> <span class="token number">500</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">25</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">25</span>
+
+<span class="token comment">// 我们设定currentTime的值为 997到1025得出结果为</span>
+<span class="token comment">// 从997到1021的结果都是496</span>
+<span class="token comment">// 从1022到1025的结果都是521</span>
+<span class="token comment">// 可以得出再间隔25ms内即(1021 - 997 + 1)结果是一致的。</span>
+<span class="token comment">// 也即异步更新的过期时间间隔是25ms</span>
+</code></pre></div><p>其他的如 <strong>computeSuspenseExpiration</strong>、<strong>computeInteractiveExpiration</strong>是同样的道理。</p> <p><strong>React</strong>为什么这么设计呢？</p> <p>这么做也许是为了让非常相近的两次更新得到相同的expirationTime，然后在一次更新中完成，相当于一个自动的batchedUpdates。</p> <p>我们知道setState可能会批量更新，就是这个原因。</p> <p>内部会把异步更新间隔在25ms内的更新合并成一个，可以很大的提高性能</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">9/4/2020, 11:56:27 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/react/Fiber.html" class="prev">
+        Fiber 数据结构
+      </a></span> <span class="next"><a href="/react/updateQueue.html">
+        模拟 UpdateQueue
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.620192f4.js" defer></script><script src="/assets/js/2.ea8b5cd0.js" defer></script><script src="/assets/js/116.cedd5e38.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DOM创建 | xikun&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="成功的路上一点也不拥挤">
+    
+    <link rel="preload" href="/assets/css/0.styles.7cbaeff5.css" as="style"><link rel="preload" href="/assets/js/app.620192f4.js" as="script"><link rel="preload" href="/assets/js/2.ea8b5cd0.js" as="script"><link rel="preload" href="/assets/js/104.3e97bf6e.js" as="script"><link rel="prefetch" href="/assets/js/10.c31ea8d8.js"><link rel="prefetch" href="/assets/js/100.8ce541af.js"><link rel="prefetch" href="/assets/js/101.e8afd788.js"><link rel="prefetch" href="/assets/js/102.47213295.js"><link rel="prefetch" href="/assets/js/103.9480ed2d.js"><link rel="prefetch" href="/assets/js/105.6bea410d.js"><link rel="prefetch" href="/assets/js/106.fcb8612b.js"><link rel="prefetch" href="/assets/js/107.aadba9d3.js"><link rel="prefetch" href="/assets/js/108.a06604cd.js"><link rel="prefetch" href="/assets/js/109.1cfd1a28.js"><link rel="prefetch" href="/assets/js/11.3665e921.js"><link rel="prefetch" href="/assets/js/110.bf4b3814.js"><link rel="prefetch" href="/assets/js/111.7b65b5ef.js"><link rel="prefetch" href="/assets/js/112.0a8a7bbb.js"><link rel="prefetch" href="/assets/js/113.76ab4230.js"><link rel="prefetch" href="/assets/js/114.cf9abdf5.js"><link rel="prefetch" href="/assets/js/115.3dc6bba6.js"><link rel="prefetch" href="/assets/js/116.cedd5e38.js"><link rel="prefetch" href="/assets/js/117.9be4a81e.js"><link rel="prefetch" href="/assets/js/118.78c5c713.js"><link rel="prefetch" href="/assets/js/119.3d4ecf88.js"><link rel="prefetch" href="/assets/js/12.2734fc8e.js"><link rel="prefetch" href="/assets/js/120.f7025eff.js"><link rel="prefetch" href="/assets/js/121.c47a931b.js"><link rel="prefetch" href="/assets/js/122.619a8684.js"><link rel="prefetch" href="/assets/js/123.53b29202.js"><link rel="prefetch" href="/assets/js/124.0e57ff99.js"><link rel="prefetch" href="/assets/js/125.a40c4ee4.js"><link rel="prefetch" href="/assets/js/126.6632e347.js"><link rel="prefetch" href="/assets/js/127.e12303a5.js"><link rel="prefetch" href="/assets/js/128.b6663c87.js"><link rel="prefetch" href="/assets/js/129.476f5ec6.js"><link rel="prefetch" href="/assets/js/13.ec50e476.js"><link rel="prefetch" href="/assets/js/130.4ae3f875.js"><link rel="prefetch" href="/assets/js/131.cfad27ad.js"><link rel="prefetch" href="/assets/js/132.bcbb9dbe.js"><link rel="prefetch" href="/assets/js/133.a9a4f777.js"><link rel="prefetch" href="/assets/js/134.19924409.js"><link rel="prefetch" href="/assets/js/135.d3a9de07.js"><link rel="prefetch" href="/assets/js/136.03e87f0a.js"><link rel="prefetch" href="/assets/js/14.2cef92f4.js"><link rel="prefetch" href="/assets/js/15.568a38c9.js"><link rel="prefetch" href="/assets/js/16.b20562a4.js"><link rel="prefetch" href="/assets/js/17.eaf0edc0.js"><link rel="prefetch" href="/assets/js/18.71e1e2cf.js"><link rel="prefetch" href="/assets/js/19.09d2e91b.js"><link rel="prefetch" href="/assets/js/20.97fb148c.js"><link rel="prefetch" href="/assets/js/21.3904e2e0.js"><link rel="prefetch" href="/assets/js/22.c35f001d.js"><link rel="prefetch" href="/assets/js/23.43736dfe.js"><link rel="prefetch" href="/assets/js/24.7b49ef43.js"><link rel="prefetch" href="/assets/js/25.25ebb14a.js"><link rel="prefetch" href="/assets/js/26.f9403560.js"><link rel="prefetch" href="/assets/js/27.cba2d114.js"><link rel="prefetch" href="/assets/js/28.b5f9da9c.js"><link rel="prefetch" href="/assets/js/29.3b7334c0.js"><link rel="prefetch" href="/assets/js/3.89a4bb9c.js"><link rel="prefetch" href="/assets/js/30.b6eded62.js"><link rel="prefetch" href="/assets/js/31.e23fcf1b.js"><link rel="prefetch" href="/assets/js/32.8f6ac1e0.js"><link rel="prefetch" href="/assets/js/33.61b1ac29.js"><link rel="prefetch" href="/assets/js/34.963bd529.js"><link rel="prefetch" href="/assets/js/35.848dff3b.js"><link rel="prefetch" href="/assets/js/36.3153fb2a.js"><link rel="prefetch" href="/assets/js/37.7c2bbaa8.js"><link rel="prefetch" href="/assets/js/38.22e223d1.js"><link rel="prefetch" href="/assets/js/39.7ef433e5.js"><link rel="prefetch" href="/assets/js/4.e4fefc08.js"><link rel="prefetch" href="/assets/js/40.01f13428.js"><link rel="prefetch" href="/assets/js/41.51d9c24a.js"><link rel="prefetch" href="/assets/js/42.aa8d9dc5.js"><link rel="prefetch" href="/assets/js/43.5b1bbfa8.js"><link rel="prefetch" href="/assets/js/44.a7e027a3.js"><link rel="prefetch" href="/assets/js/45.4b6b407e.js"><link rel="prefetch" href="/assets/js/46.aa23bdc0.js"><link rel="prefetch" href="/assets/js/47.ad15c348.js"><link rel="prefetch" href="/assets/js/48.5c3346d9.js"><link rel="prefetch" href="/assets/js/49.868f8cc1.js"><link rel="prefetch" href="/assets/js/5.15ee20ac.js"><link rel="prefetch" href="/assets/js/50.af0a1194.js"><link rel="prefetch" href="/assets/js/51.34e860c4.js"><link rel="prefetch" href="/assets/js/52.1414a9fa.js"><link rel="prefetch" href="/assets/js/53.ce6ae3c1.js"><link rel="prefetch" href="/assets/js/54.bcbabc9b.js"><link rel="prefetch" href="/assets/js/55.13c12ca9.js"><link rel="prefetch" href="/assets/js/56.e3b66859.js"><link rel="prefetch" href="/assets/js/57.f1d07b88.js"><link rel="prefetch" href="/assets/js/58.e5efbc70.js"><link rel="prefetch" href="/assets/js/59.75d6c9f3.js"><link rel="prefetch" href="/assets/js/6.f18fe988.js"><link rel="prefetch" href="/assets/js/60.cd65af94.js"><link rel="prefetch" href="/assets/js/61.42a95779.js"><link rel="prefetch" href="/assets/js/62.05ce503f.js"><link rel="prefetch" href="/assets/js/63.fa5359f2.js"><link rel="prefetch" href="/assets/js/64.a136cc71.js"><link rel="prefetch" href="/assets/js/65.2dd5a35f.js"><link rel="prefetch" href="/assets/js/66.835f7953.js"><link rel="prefetch" href="/assets/js/67.95c7ce66.js"><link rel="prefetch" href="/assets/js/68.7f3a7551.js"><link rel="prefetch" href="/assets/js/69.6a987c0f.js"><link rel="prefetch" href="/assets/js/7.21d1e264.js"><link rel="prefetch" href="/assets/js/70.cba306e3.js"><link rel="prefetch" href="/assets/js/71.5901b9c1.js"><link rel="prefetch" href="/assets/js/72.b32bc635.js"><link rel="prefetch" href="/assets/js/73.7da4e57b.js"><link rel="prefetch" href="/assets/js/74.33b47a6e.js"><link rel="prefetch" href="/assets/js/75.2e1bd753.js"><link rel="prefetch" href="/assets/js/76.e10531bb.js"><link rel="prefetch" href="/assets/js/77.0fc91e78.js"><link rel="prefetch" href="/assets/js/78.2d387af8.js"><link rel="prefetch" href="/assets/js/79.9b2438e9.js"><link rel="prefetch" href="/assets/js/8.0f6a4995.js"><link rel="prefetch" href="/assets/js/80.e78c3710.js"><link rel="prefetch" href="/assets/js/81.03603119.js"><link rel="prefetch" href="/assets/js/82.5272a1a2.js"><link rel="prefetch" href="/assets/js/83.b1bc6154.js"><link rel="prefetch" href="/assets/js/84.9de9e3d0.js"><link rel="prefetch" href="/assets/js/85.d364dca4.js"><link rel="prefetch" href="/assets/js/86.134982cd.js"><link rel="prefetch" href="/assets/js/87.65bb4764.js"><link rel="prefetch" href="/assets/js/88.9dfd1f9d.js"><link rel="prefetch" href="/assets/js/89.cd79574b.js"><link rel="prefetch" href="/assets/js/9.e8d3e324.js"><link rel="prefetch" href="/assets/js/90.32f468f8.js"><link rel="prefetch" href="/assets/js/91.b1155128.js"><link rel="prefetch" href="/assets/js/92.0d24fcfb.js"><link rel="prefetch" href="/assets/js/93.a4242f75.js"><link rel="prefetch" href="/assets/js/94.152fe6f4.js"><link rel="prefetch" href="/assets/js/95.25595df3.js"><link rel="prefetch" href="/assets/js/96.3def133d.js"><link rel="prefetch" href="/assets/js/97.b78d3cdd.js"><link rel="prefetch" href="/assets/js/98.d95d0b35.js"><link rel="prefetch" href="/assets/js/99.281e9c8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7cbaeff5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">xikun's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/arithmetic/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">
+  React源码解析
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/arithmetic/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">
+  React源码解析
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>创建更新</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>任务调度</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/react/scheduleWork.html" class="sidebar-link">scheduleWork</a></li><li><a href="/react/双缓存fiber树.html" class="sidebar-link">双缓存fiber树</a></li><li><a href="/react/workLoopSync.html" class="sidebar-link">workLoopSync</a></li><li><a href="/react/beginWork.html" class="sidebar-link">beginWork</a></li><li><a href="/react/HostComponent.html" class="sidebar-link">HostComponent</a></li><li><a href="/react/ClassComponent.html" class="sidebar-link">ClassComponent</a></li><li><a href="/react/completeUnitOfWork.html" class="sidebar-link">completeUnitOfWork</a></li><li><a href="/react/DOM创建.html" class="active sidebar-link">DOM创建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/DOM创建.html#createinstance" class="sidebar-link">createInstance</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/DOM创建.html#createelement" class="sidebar-link">createElement</a></li></ul></li><li class="sidebar-sub-header"><a href="/react/DOM创建.html#appendallchildren" class="sidebar-link">appendAllChildren</a></li><li class="sidebar-sub-header"><a href="/react/DOM创建.html#finalizeinitialchildren" class="sidebar-link">finalizeInitialChildren</a></li></ul></li><li><a href="/react/finishSyncRender.html" class="sidebar-link">finishSyncRender</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Hooks</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="dom创建"><a href="#dom创建" class="header-anchor">#</a> DOM创建</h1> <p>上章讲到会调用 <strong>completeWork</strong> 创建 DOM 实例,讲到 <strong>HostComponent</strong>,初次创建分别会调用</p> <ol><li><p><strong>createInstance</strong> 创建 DOM 对象</p></li> <li><p><strong>appendAllChildren</strong> 把子树中的DOM对象append到本节点的instance之中</p></li> <li><p><strong>finalizeInitialChildren</strong> 设置DOM对象的属性, 绑定事件等</p></li></ol> <h2 id="createinstance"><a href="#createinstance" class="header-anchor">#</a> createInstance</h2> <p><a href="https://github.com/facebook/react/blob/v16.13.0/packages/react-dom/src/client/ReactDOMHostConfig.js#L232" target="_blank" rel="noopener noreferrer">createInstance<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 可以看到方法的定义</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">createInstance</span><span class="token punctuation">(</span>
+  <span class="token parameter">type<span class="token operator">:</span> string<span class="token punctuation">,</span>
+  props<span class="token operator">:</span> Props<span class="token punctuation">,</span>
+  rootContainerInstance<span class="token operator">:</span> Container<span class="token punctuation">,</span>
+  hostContext<span class="token operator">:</span> HostContext<span class="token punctuation">,</span>
+  internalInstanceHandle<span class="token operator">:</span> Object<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> Instance <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> parentNamespace<span class="token operator">:</span> string<span class="token punctuation">;</span>
+  parentNamespace <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>hostContext<span class="token operator">:</span> any<span class="token punctuation">)</span><span class="token operator">:</span> HostContextProd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">const</span> domElement<span class="token operator">:</span> Instance <span class="token operator">=</span> <span class="token function">createElement</span><span class="token punctuation">(</span>
+    type<span class="token punctuation">,</span>
+    props<span class="token punctuation">,</span>
+    rootContainerInstance<span class="token punctuation">,</span>
+    parentNamespace<span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">precacheFiberNode</span><span class="token punctuation">(</span>internalInstanceHandle<span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">updateFiberProps</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> domElement<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这里就是调用 <strong>createElement</strong> 返回了 domElement</p> <h3 id="createelement"><a href="#createelement" class="header-anchor">#</a> createElement</h3> <p><a href="https://github.com/facebook/react/blob/v16.13.0/packages/react-dom/src/client/ReactDOMComponent.js#L387" target="_blank" rel="noopener noreferrer">createElement<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 可以看到会创建 domElement</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">createElement</span><span class="token punctuation">(</span>
+  <span class="token parameter">type<span class="token operator">:</span> string<span class="token punctuation">,</span>
+  props<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+  rootContainerElement<span class="token operator">:</span> Element <span class="token operator">|</span> Document<span class="token punctuation">,</span>
+  parentNamespace<span class="token operator">:</span> string<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> Element <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> isCustomComponentTag<span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> ownerDocument<span class="token operator">:</span> Document <span class="token operator">=</span> <span class="token function">getOwnerDocumentFromRootContainer</span><span class="token punctuation">(</span>
+    rootContainerElement<span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> domElement<span class="token operator">:</span> Element<span class="token punctuation">;</span>
+  <span class="token keyword">let</span> namespaceURI <span class="token operator">=</span> parentNamespace<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>namespaceURI <span class="token operator">===</span> <span class="token constant">HTML_NAMESPACE</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    namespaceURI <span class="token operator">=</span> <span class="token function">getIntrinsicNamespace</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>namespaceURI <span class="token operator">===</span> <span class="token constant">HTML_NAMESPACE</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'script'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Create the script via .innerHTML so its &quot;parser-inserted&quot; flag is</span>
+      <span class="token comment">// set to true and it does not execute</span>
+      <span class="token keyword">const</span> div <span class="token operator">=</span> ownerDocument<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      div<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">'&lt;script&gt;&lt;'</span> <span class="token operator">+</span> <span class="token string">'/script&gt;'</span><span class="token punctuation">;</span> <span class="token comment">// eslint-disable-line</span>
+      <span class="token comment">// This is guaranteed to yield a script element.</span>
+      <span class="token keyword">const</span> firstChild <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>div<span class="token punctuation">.</span>firstChild<span class="token operator">:</span> any<span class="token punctuation">)</span><span class="token operator">:</span> HTMLScriptElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      domElement <span class="token operator">=</span> div<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>firstChild<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> props<span class="token punctuation">.</span>is <span class="token operator">===</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// $FlowIssue `createElement` should be updated for Web Components</span>
+      domElement <span class="token operator">=</span> ownerDocument<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> <span class="token punctuation">{</span>is<span class="token operator">:</span> props<span class="token punctuation">.</span>is<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      domElement <span class="token operator">=</span> ownerDocument<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'select'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> node <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>domElement<span class="token operator">:</span> any<span class="token punctuation">)</span><span class="token operator">:</span> HTMLSelectElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>props<span class="token punctuation">.</span>multiple<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          node<span class="token punctuation">.</span>multiple <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>props<span class="token punctuation">.</span>size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          node<span class="token punctuation">.</span>size <span class="token operator">=</span> props<span class="token punctuation">.</span>size<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    domElement <span class="token operator">=</span> ownerDocument<span class="token punctuation">.</span><span class="token function">createElementNS</span><span class="token punctuation">(</span>namespaceURI<span class="token punctuation">,</span> type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> domElement<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="appendallchildren"><a href="#appendallchildren" class="header-anchor">#</a> appendAllChildren</h2> <p><strong>appendAllChildren</strong> 负责把子树中的DOM对象 append 到本节点的 <strong>instance</strong> 之中</p> <div class="language-js extra-class"><pre class="language-js"><code>
+    <span class="token function-variable function">appendAllChildren</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>
+    <span class="token parameter">parent<span class="token operator">:</span> Instance<span class="token punctuation">,</span>
+    workInProgress<span class="token operator">:</span> Fiber<span class="token punctuation">,</span>
+    needsVisibilityToggle<span class="token operator">:</span> boolean<span class="token punctuation">,</span>
+    isHidden<span class="token operator">:</span> boolean<span class="token punctuation">,</span></span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> node <span class="token operator">=</span> workInProgress<span class="token punctuation">.</span>child<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>node <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>tag <span class="token operator">===</span> HostComponent <span class="token operator">||</span> node<span class="token punctuation">.</span>tag <span class="token operator">===</span> HostText<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// node.stateNode == workInProgress.child.stateNode 就是子fiber的dom对象</span>
+        <span class="token comment">// 因为创建dom对象是从fiber tree的底部向根创建的，所以能先得到子节点的node.stateNode</span>
+        <span class="token function">appendInitialChild</span><span class="token punctuation">(</span>parent<span class="token punctuation">,</span> node<span class="token punctuation">.</span>stateNode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>enableFundamentalAPI <span class="token operator">&amp;&amp;</span> node<span class="token punctuation">.</span>tag <span class="token operator">===</span> FundamentalComponent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">appendInitialChild</span><span class="token punctuation">(</span>parent<span class="token punctuation">,</span> node<span class="token punctuation">.</span>stateNode<span class="token punctuation">.</span>instance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>tag <span class="token operator">===</span> HostPortal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>child <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            node<span class="token punctuation">.</span>child<span class="token punctuation">.</span>return <span class="token operator">=</span> node<span class="token punctuation">;</span>
+            node <span class="token operator">=</span> node<span class="token punctuation">.</span>child<span class="token punctuation">;</span>
+        <span class="token keyword">continue</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">===</span> workInProgress<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>sibling <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>return <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> node<span class="token punctuation">.</span>return <span class="token operator">===</span> workInProgress<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            node <span class="token operator">=</span> node<span class="token punctuation">.</span>return<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        node<span class="token punctuation">.</span>sibling<span class="token punctuation">.</span>return <span class="token operator">=</span> node<span class="token punctuation">.</span>return<span class="token punctuation">;</span>
+        node <span class="token operator">=</span> node<span class="token punctuation">.</span>sibling<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>创建 Fiber 树的时候是从根节点 RootFiber 开始创建,现在创建 <strong>DOM</strong> 从底部开始,然后回到 <strong>completeUnitOfWork</strong> 判断 有没有兄弟节点如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">completeUnitOfWork</span><span class="token punctuation">(</span><span class="token parameter">workInProgress</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 创建 dom 节点</span>
+        next<span class="token operator">=</span> <span class="token function">completeWork</span><span class="token punctuation">(</span>workInProgress<span class="token punctuation">)</span>
+        <span class="token comment">// 存在新的Fiber节点,退出循环, 回到performUnitOfWork阶段</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>next <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Completing this fiber spawned new work. Work on that next.</span>
+            <span class="token keyword">return</span> next<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token operator">...</span>
+        <span class="token comment">// 看是否存在同级的兄弟Fiber节点，如存在，则退出completeUnitOfWork阶段，回到beginWork里去</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span>siblingFiber<span class="token punctuation">)</span> <span class="token keyword">return</span> siblingFiber
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span>returnFiber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            workInProgress <span class="token operator">=</span> returnFiber
+            <span class="token keyword">continue</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果有兄弟节点就继续执行 <strong>completeWork</strong> 创建 DOM,在 <strong>appendAllChildren</strong> 中如果兄弟节点也有子节点则继续递归</p> <ol><li><p>创建 DOM 添加 子节点,对应一个 parent 可以添加多个</p></li> <li><p>把兄弟节点的 <strong>return</strong> 指向和 <strong>child</strong> 一样,前面说了 fiber 只有 child 节点,其他节点用 <strong>sibling</strong> 关联</p></li> <li><p>如果没有 <strong>return</strong> 兄弟节点 就往上找 <strong>return</strong></p></li> <li><p>当找到的 fiber 和当前的 <strong>workInProgress</strong> 同级时退出</p></li></ol> <div class="custom-block warning"><p class="custom-block-title">dom实例的挂载</p> <p>workInProgress.stateNode = instance;</p></div> <h2 id="finalizeinitialchildren"><a href="#finalizeinitialchildren" class="header-anchor">#</a> finalizeInitialChildren</h2> <p>接下来就是绑定属性,代码如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">finalizeInitialChildren</span><span class="token punctuation">(</span>
+  <span class="token parameter">domElement<span class="token operator">:</span> Instance<span class="token punctuation">,</span>
+  type<span class="token operator">:</span> string<span class="token punctuation">,</span>
+  props<span class="token operator">:</span> Props<span class="token punctuation">,</span>
+  rootContainerInstance<span class="token operator">:</span> Container<span class="token punctuation">,</span>
+  hostContext<span class="token operator">:</span> HostContext<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> boolean <span class="token punctuation">{</span>
+  <span class="token function">setInitialProperties</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> type<span class="token punctuation">,</span> props<span class="token punctuation">,</span> rootContainerInstance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token function">shouldAutoFocusHostComponent</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a href="https://github.com/facebook/react/blob/v16.13.0/packages/react-dom/src/client/ReactDOMComponent.js#L503" target="_blank" rel="noopener noreferrer">setInitialProperties<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 代码非常多,下面贴出部分代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">setInitialProperties</span><span class="token punctuation">(</span>
+  <span class="token parameter">domElement<span class="token operator">:</span> Element<span class="token punctuation">,</span>
+  tag<span class="token operator">:</span> string<span class="token punctuation">,</span>
+  rawProps<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+  rootContainerElement<span class="token operator">:</span> Element <span class="token operator">|</span> Document<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> isCustomComponentTag <span class="token operator">=</span> <span class="token function">isCustomComponent</span><span class="token punctuation">(</span>tag<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// TODO: Make sure that we check isMounted before firing any of these events.</span>
+  <span class="token keyword">let</span> props<span class="token operator">:</span> Object<span class="token punctuation">;</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>tag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">'iframe'</span><span class="token operator">:</span>
+    <span class="token keyword">case</span> <span class="token string">'object'</span><span class="token operator">:</span>
+    <span class="token keyword">case</span> <span class="token string">'embed'</span><span class="token operator">:</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_LOAD</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> rawProps<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'video'</span><span class="token operator">:</span>
+    <span class="token keyword">case</span> <span class="token string">'audio'</span><span class="token operator">:</span>
+      <span class="token comment">// Create listener for each media event</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> mediaEventTypes<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span>mediaEventTypes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      props <span class="token operator">=</span> rawProps<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'source'</span><span class="token operator">:</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_ERROR</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> rawProps<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'img'</span><span class="token operator">:</span>
+    <span class="token keyword">case</span> <span class="token string">'image'</span><span class="token operator">:</span>
+    <span class="token keyword">case</span> <span class="token string">'link'</span><span class="token operator">:</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_ERROR</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_LOAD</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> rawProps<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'form'</span><span class="token operator">:</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_RESET</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_SUBMIT</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> rawProps<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'details'</span><span class="token operator">:</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_TOGGLE</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> rawProps<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'input'</span><span class="token operator">:</span>
+      <span class="token function">ReactDOMInputInitWrapperState</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> <span class="token function">ReactDOMInputGetHostProps</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_INVALID</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// For controlled components we always need to ensure we're listening</span>
+      <span class="token comment">// to onChange. Even if there is no listener.</span>
+      <span class="token function">ensureListeningTo</span><span class="token punctuation">(</span>rootContainerElement<span class="token punctuation">,</span> <span class="token string">'onChange'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'option'</span><span class="token operator">:</span>
+      <span class="token function">ReactDOMOptionValidateProps</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> <span class="token function">ReactDOMOptionGetHostProps</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'select'</span><span class="token operator">:</span>
+      <span class="token function">ReactDOMSelectInitWrapperState</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> <span class="token function">ReactDOMSelectGetHostProps</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_INVALID</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// For controlled components we always need to ensure we're listening</span>
+      <span class="token comment">// to onChange. Even if there is no listener.</span>
+      <span class="token function">ensureListeningTo</span><span class="token punctuation">(</span>rootContainerElement<span class="token punctuation">,</span> <span class="token string">'onChange'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'textarea'</span><span class="token operator">:</span>
+      <span class="token function">ReactDOMTextareaInitWrapperState</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      props <span class="token operator">=</span> <span class="token function">ReactDOMTextareaGetHostProps</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">trapBubbledEvent</span><span class="token punctuation">(</span><span class="token constant">TOP_INVALID</span><span class="token punctuation">,</span> domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// For controlled components we always need to ensure we're listening</span>
+      <span class="token comment">// to onChange. Even if there is no listener.</span>
+      <span class="token function">ensureListeningTo</span><span class="token punctuation">(</span>rootContainerElement<span class="token punctuation">,</span> <span class="token string">'onChange'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+      props <span class="token operator">=</span> rawProps<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">assertValidProps</span><span class="token punctuation">(</span>tag<span class="token punctuation">,</span> props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 设置属性</span>
+  <span class="token function">setInitialDOMProperties</span><span class="token punctuation">(</span>
+    tag<span class="token punctuation">,</span>
+    domElement<span class="token punctuation">,</span>
+    rootContainerElement<span class="token punctuation">,</span>
+    props<span class="token punctuation">,</span>
+    isCustomComponentTag<span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>tag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">'input'</span><span class="token operator">:</span>
+      <span class="token comment">// TODO: Make sure we check if this is still unmounted or do any clean</span>
+      <span class="token comment">// up necessary since we never stop tracking anymore.</span>
+      <span class="token function">track</span><span class="token punctuation">(</span><span class="token punctuation">(</span>domElement<span class="token operator">:</span> any<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ReactDOMInputPostMountWrapper</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'textarea'</span><span class="token operator">:</span>
+      <span class="token comment">// TODO: Make sure we check if this is still unmounted or do any clean</span>
+      <span class="token comment">// up necessary since we never stop tracking anymore.</span>
+      <span class="token function">track</span><span class="token punctuation">(</span><span class="token punctuation">(</span>domElement<span class="token operator">:</span> any<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ReactDOMTextareaPostMountWrapper</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'option'</span><span class="token operator">:</span>
+      <span class="token function">ReactDOMOptionPostMountWrapper</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'select'</span><span class="token operator">:</span>
+      <span class="token function">ReactDOMSelectPostMountWrapper</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> rawProps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> props<span class="token punctuation">.</span>onClick <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// TODO: This cast may not be sound for SVG, MathML or custom elements.</span>
+        <span class="token function">trapClickOnNonInteractiveElement</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>domElement<span class="token operator">:</span> any<span class="token punctuation">)</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在 <strong>setInitialDOMProperties</strong> 方法中我们可以看到属性的设置,以及以下特殊属性的设置,如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">setInitialDOMProperties</span><span class="token punctuation">(</span>
+  <span class="token parameter">tag<span class="token operator">:</span> string<span class="token punctuation">,</span>
+  domElement<span class="token operator">:</span> Element<span class="token punctuation">,</span>
+  rootContainerElement<span class="token operator">:</span> Element <span class="token operator">|</span> Document<span class="token punctuation">,</span>
+  nextProps<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+  isCustomComponentTag<span class="token operator">:</span> boolean<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> propKey <span class="token keyword">in</span> nextProps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>nextProps<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>propKey<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">continue</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> nextProp <span class="token operator">=</span> nextProps<span class="token punctuation">[</span>propKey<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// 当为 style</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>propKey <span class="token operator">===</span> <span class="token constant">STYLE</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Relies on `updateStylesByID` not mutating `styleUpdates`.</span>
+      <span class="token function">setValueForStyles</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> nextProp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 为 dangerouslySetInnerHTML</span>
+     <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>propKey <span class="token operator">===</span> <span class="token constant">DANGEROUSLY_SET_INNER_HTML</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> nextHtml <span class="token operator">=</span> nextProp <span class="token operator">?</span> nextProp<span class="token punctuation">[</span><span class="token constant">HTML</span><span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>nextHtml <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">setInnerHTML</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> nextHtml<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> 
+    <span class="token comment">// 为 child 当为 独身子 child 直接就是文本</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>propKey <span class="token operator">===</span> <span class="token constant">CHILDREN</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> nextProp <span class="token operator">===</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> canSetTextContent <span class="token operator">=</span> tag <span class="token operator">!==</span> <span class="token string">'textarea'</span> <span class="token operator">||</span> nextProp <span class="token operator">!==</span> <span class="token string">''</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>canSetTextContent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">setTextContent</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> nextProp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> nextProp <span class="token operator">===</span> <span class="token string">'number'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">setTextContent</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> <span class="token string">''</span> <span class="token operator">+</span> nextProp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      <span class="token punctuation">(</span>enableDeprecatedFlareAPI <span class="token operator">&amp;&amp;</span> propKey <span class="token operator">===</span> DEPRECATED_flareListeners<span class="token punctuation">)</span> <span class="token operator">||</span>
+      propKey <span class="token operator">===</span> <span class="token constant">SUPPRESS_CONTENT_EDITABLE_WARNING</span> <span class="token operator">||</span>
+      propKey <span class="token operator">===</span> <span class="token constant">SUPPRESS_HYDRATION_WARNING</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Noop</span>
+    <span class="token punctuation">}</span> 
+    <span class="token comment">// autoFocus</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>propKey <span class="token operator">===</span> <span class="token constant">AUTOFOCUS</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// We polyfill it separately on the client during commit.</span>
+      <span class="token comment">// We could have excluded it in the property list instead of</span>
+      <span class="token comment">// adding a special case here, but then it wouldn't be emitted</span>
+      <span class="token comment">// on server rendering (but we *do* want to emit it in SSR).</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>registrationNameModules<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>propKey<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>nextProp <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      
+        <span class="token function">ensureListeningTo</span><span class="token punctuation">(</span>rootContainerElement<span class="token punctuation">,</span> propKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>nextProp <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">setValueForProperty</span><span class="token punctuation">(</span>domElement<span class="token punctuation">,</span> propKey<span class="token punctuation">,</span> nextProp<span class="token punctuation">,</span> isCustomComponentTag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以看到对不同的属性分别做了不同的处理,如当遇到是 <strong>style</strong> 属性时 又调用了 <strong>setValueForStyles</strong> 方法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">setValueForStyles</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> styles</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> style <span class="token operator">=</span> node<span class="token punctuation">.</span>style<span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> styleName <span class="token keyword">in</span> styles<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>styles<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>styleName<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">continue</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> isCustomProperty <span class="token operator">=</span> styleName<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'--'</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> styleValue <span class="token operator">=</span> <span class="token function">dangerousStyleValue</span><span class="token punctuation">(</span>
+      styleName<span class="token punctuation">,</span>
+      styles<span class="token punctuation">[</span>styleName<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      isCustomProperty<span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>styleName <span class="token operator">===</span> <span class="token string">'float'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      styleName <span class="token operator">=</span> <span class="token string">'cssFloat'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isCustomProperty<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span>styleName<span class="token punctuation">,</span> styleValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">[</span>styleName<span class="token punctuation">]</span> <span class="token operator">=</span> styleValue<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如对 <font color="red">float</font> 属性做了特殊处理,其他的就自己看吧,都是流水账代码, 对 <strong>trapBubbledEvent</strong> React 的事件合成我们放在后面再说</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">10/25/2020, 6:04:42 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/react/completeUnitOfWork.html" class="prev">
+        completeUnitOfWork
+      </a></span> <span class="next"><a href="/react/finishSyncRender.html">
+        finishSyncRender
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.620192f4.js" defer></script><script src="/assets/js/2.ea8b5cd0.js" defer></script><script src="/assets/js/104.3e97bf6e.js" defer></script>
+  </body>
+</html>
